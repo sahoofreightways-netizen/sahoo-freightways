@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahoo Freightways connects businesses with suitable truck owners and transport partners for freight enquiries across India.">
+  <meta name="theme-color" content="#0b1d33">
+  <title>Sahoo Freightways | Connecting Loads. Moving India.</title>
+  <style>
+    :root{--navy:#0b1d33;--navy2:#102b49;--gold:#e6b85c;--cream:#f7f8fa;--ink:#182433;--muted:#617083;--white:#fff;--line:#e2e7ed;--green:#16794b}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit} .wrap{width:min(1120px,92%);margin:auto}
+    header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20;border-bottom:1px solid #ffffff1a}
+    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}.mark{width:46px;height:46px;border:2px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold);font-weight:900;letter-spacing:-2px;font-size:18px}.brand strong{display:block;letter-spacing:1.5px;font-size:15px}.brand small{display:block;color:#d5dfeb;font-size:10px;letter-spacing:2px}
+    nav{display:flex;align-items:center;gap:24px}nav a{text-decoration:none;font-size:14px;color:#e8edf4}nav a:hover{color:var(--gold)}.nav-cta{background:var(--gold);color:var(--navy);padding:10px 15px;border-radius:8px;font-weight:800}
+    .menu-btn{display:none;background:transparent;color:white;border:1px solid #ffffff55;border-radius:8px;padding:8px 11px}
+    .hero{background:radial-gradient(circle at 82% 20%,#1d4164 0,transparent 34%),linear-gradient(120deg,var(--navy),#102b49);color:white;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:42px;padding:82px 0 88px}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold);text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.eyebrow:before{content:"";width:26px;height:2px;background:var(--gold)}
+    h1{font-size:clamp(38px,5.3vw,64px);line-height:1.07;letter-spacing:-1.8px;margin:18px 0}.hero h1 span{color:var(--gold)}.hero p{font-size:17px;color:#d9e3ee;max-width:600px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}.btn{display:inline-flex;justify-content:center;align-items:center;gap:9px;padding:13px 18px;border-radius:9px;text-decoration:none;font-weight:800;font-size:14px;border:1px solid transparent;cursor:pointer}.btn-gold{background:var(--gold);color:var(--navy)}.btn-outline{border-color:#ffffff66;color:white}.btn-dark{background:var(--navy);color:#fff}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+    .hero-visual{min-height:310px;display:grid;place-items:center;position:relative}.road-card{width:min(100%,430px);aspect-ratio:1.18;background:linear-gradient(145deg,#ffffff12,#ffffff05);border:1px solid #ffffff2a;border-radius:26px;display:grid;place-items:center;position:relative;overflow:hidden}.road-card:before,.road-card:after{content:"";position:absolute;width:180%;height:2px;background:#e6b85c4d;transform:rotate(-35deg)}.road-card:before{top:35%}.road-card:after{top:67%}.truck{z-index:1;width:85%;max-width:360px;filter:drop-shadow(0 18px 14px #0004)}.floating{position:absolute;bottom:16px;left:12px;background:#fff;color:var(--navy);border-radius:12px;padding:12px 16px;box-shadow:0 12px 30px #0002;z-index:2}.floating b{display:block;font-size:14px}.floating small{color:var(--muted)}
+    .trust-strip{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:22px 0}.trust-item{display:flex;gap:12px;align-items:center}.trust-icon{width:42px;height:42px;border-radius:12px;background:#fff5df;color:#9c6d12;display:grid;place-items:center;font-size:20px}.trust-item b{display:block;font-size:14px}.trust-item small{display:block;color:var(--muted);font-size:12px}
+    section{padding:76px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 38px}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(28px,3.5vw,42px);line-height:1.15;letter-spacing:-.8px;margin:13px 0}.section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--line);border-radius:16px;padding:25px;background:white;box-shadow:0 8px 26px #0b1d3307}.card .symbol{width:48px;height:48px;border-radius:13px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:23px;margin-bottom:19px}.card h3{margin:0 0 8px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .how{background:var(--cream)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.step{padding:24px;border-top:3px solid var(--gold);background:#fff;border-radius:0 0 14px 14px}.step-num{font-size:12px;letter-spacing:1.5px;font-weight:900;color:#a47a24}.step h3{margin:10px 0 7px}.step p{font-size:14px;color:var(--muted);margin:0}
+    .forms-section{background:#fff}.form-intro{max-width:700px;margin:0 auto 30px;text-align:center}.form-intro p{color:var(--muted)}.form-tabs{display:flex;justify-content:center;gap:10px;margin-bottom:24px}.tab{border:1px solid var(--line);background:#fff;border-radius:9px;padding:12px 17px;font-weight:800;cursor:pointer;color:var(--navy)}.tab.active{background:var(--navy);border-color:var(--navy);color:#fff}.form-shell{max-width:850px;margin:auto;border:1px solid var(--line);border-radius:18px;padding:clamp(20px,4vw,36px);box-shadow:0 15px 45px #0b1d330d}.form-shell h3{margin:0 0 6px;font-size:24px}.form-shell .sub{color:var(--muted);margin:0 0 25px;font-size:14px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:13px;font-weight:800}.field input,.field select,.field textarea{font:inherit;font-size:14px;padding:12px 13px;border:1px solid #cfd7e0;border-radius:8px;background:#fff;width:100%;color:var(--ink)}.field textarea{min-height:94px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid #e6b85c88;border-color:#b58a35}.required{color:#a53b35}.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:15px;margin-top:22px}.privacy-note{font-size:12px;color:var(--muted);margin:0}.success-note{display:none;background:#eaf7ef;color:#17613b;border-radius:8px;padding:12px;margin-top:16px;font-size:14px}
+    .pan{background:var(--navy);color:#fff}.pan-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.pan h2{font-size:clamp(28px,3.8vw,43px);line-height:1.12;margin:12px 0}.pan p{color:#d4deea}.route-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.route-pills span{border:1px solid #ffffff30;border-radius:100px;padding:7px 12px;color:#f5e3b9;font-size:12px}.coverage-box{border:1px solid #ffffff2a;border-radius:18px;padding:27px;background:#ffffff08}.coverage-box h3{margin-top:0}.coverage-box li{margin:10px 0;color:#e0e7ef}.coverage-box ul{padding-left:20px}
+    .faq-list{max-width:820px;margin:auto}.faq-list details{border-bottom:1px solid var(--line);padding:17px 0}.faq-list summary{font-weight:800;cursor:pointer}.faq-list details p{color:var(--muted);font-size:14px;margin-bottom:0}
+    .contact-band{padding:34px 0;background:#fff5df}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}.contact-inner h2{margin:0 0 5px;font-size:27px}.contact-inner p{margin:0;color:#59616c}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+    footer{background:#071525;color:#fff;padding:42px 0 22px}.footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr;gap:35px}.footer-brand p{color:#b9c5d2;font-size:14px;max-width:390px}.footer-col h4{color:var(--gold);margin:0 0 12px}.footer-col a,.footer-col span{display:block;text-decoration:none;color:#d1d9e2;font-size:14px;margin:7px 0}.footer-col a:hover{color:var(--gold)}.copyright{border-top:1px solid #ffffff1a;margin-top:30px;padding-top:17px;color:#aeb9c6;font-size:12px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.disclaimer{font-size:11px;color:#9eacbc;max-width:760px;margin-top:12px}
+    @media(max-width:800px){.hero-grid{grid-template-columns:1fr;padding:60px 0}.hero-visual{min-height:260px}.cards,.steps{grid-template-columns:1fr}.pan-grid{grid-template-columns:1fr}.trust-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}nav{gap:13px}nav a{font-size:12px}}
+    @media(max-width:620px){.nav{min-height:68px}.menu-btn{display:block}nav{display:none;position:absolute;left:0;right:0;top:68px;background:var(--navy);padding:15px 4% 20px;flex-direction:column;align-items:stretch;border-top:1px solid #ffffff22}nav.open{display:flex}nav a{font-size:14px;padding:8px}.hero-grid{padding:48px 0 58px;gap:25px}h1{letter-spacing:-1px}.hero p{font-size:15px}.hero-visual{min-height:220px}.floating{bottom:7px;left:0;padding:9px 12px}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.form-tabs{flex-direction:column}.tab{width:100%}.contact-inner{align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}section{padding:58px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="Sahoo Freightways home">
+      <div class="mark">SF</div><div><strong>SAHOO FREIGHTWAYS</strong><small>CONNECTING LOADS. MOVING INDIA.</small></div>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-label="Open navigation">☰ Menu</button>
+    <nav id="navLinks">
+      <a href="#services">Services</a><a href="#how">How It Works</a><a href="#enquiry">Send Enquiry</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#enquiry">Get Transport Help ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Freight connections across India</div>
+        <h1>Your cargo needs a route.<br><span>We help connect it.</span></h1>
+        <p>Sahoo Freightways connects customers seeking goods transportation with suitable truck owners and transport partners. Share your requirement and we’ll help explore available options.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#enquiry">Request Transport Support <span>→</span></a>
+          <a class="btn btn-outline" href="https://wa.me/916371731430?text=Hello%20Sahoo%20Freightways%2C%20I%20need%20help%20with%20a%20transport%20enquiry." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Freight truck illustration">
+        <div class="road-card">
+          <svg class="truck" viewBox="0 0 440 250" role="img" aria-label="Illustration of a freight truck">
+            <defs><linearGradient id="trailer" x1="0" x2="1"><stop stop-color="#f8fafc"/><stop offset="1" stop-color="#d7e0e9"/></linearGradient></defs>
+            <path d="M22 45 H273 Q283 45 283 56 V164 H22 Z" fill="url(#trailer)" stroke="#c2ccd7" stroke-width="3"/>
+            <path d="M36 60 H265 M36 78 H265 M36 96 H265 M36 114 H265 M36 132 H265" stroke="#c8d2dd" stroke-width="2"/>
+            <path d="M283 104 H333 L382 145 V183 H283 Z" fill="#e6b85c" stroke="#c69431" stroke-width="3"/>
+            <path d="M307 115 H330 L363 145 H307 Z" fill="#0b1d33" stroke="#fff" stroke-width="3"/>
+            <path d="M22 164 H395 V190 H22 Z" fill="#e6b85c"/>
+            <path d="M283 164 H395 V190 H283 Z" fill="#b7862c"/>
+            <circle cx="100" cy="190" r="27" fill="#091523"/><circle cx="100" cy="190" r="13" fill="#aab7c5"/><circle cx="100" cy="190" r="5" fill="#0b1d33"/>
+            <circle cx="322" cy="190" r="27" fill="#091523"/><circle cx="322" cy="190" r="13" fill="#aab7c5"/><circle cx="322" cy="190" r="5" fill="#0b1d33"/>
+            <path d="M28 204 H399" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+            <text x="150" y="104" text-anchor="middle" font-size="21" font-weight="900" letter-spacing="2" fill="#0b1d33">SAHOO</text>
+            <text x="150" y="126" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="2" fill="#7b5a1c">FREIGHTWAYS</text>
+          </svg>
+          <div class="floating"><b>One enquiry. More options.</b><small>Subject to partner and vehicle availability</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="trust-strip">
+    <div class="wrap trust-grid">
+      <div class="trust-item"><div class="trust-icon">↗</div><div><b>Pan-India Enquiries</b><small>Routes considered based on availability</small></div></div>
+      <div class="trust-item"><div class="trust-icon">⇄</div><div><b>Customer & Truck Owner Connect</b><small>Helping the right parties find each other</small></div></div>
+      <div class="trust-item"><div class="trust-icon">✓</div><div><b>Clear Communication</b><small>Details and terms confirmed before booking</small></div></div>
+    </div>
+  </div>
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">What we help with</div><h2>Freight connections built around your requirement</h2><p>Tell us what needs to move and where it needs to go. We’ll review the details and help connect you with relevant transport opportunities.</p></div>
+      <div class="cards">
+        <article class="card"><div class="symbol">▰</div><h3>Goods Transport Enquiries</h3><p>Share your cargo type, load size, pickup and delivery points so suitable transport options can be explored.</p></article>
+        <article class="card"><div class="symbol">⇄</div><h3>Truck Owner Connections</h3><p>Truck owners can share their vehicle type, current location and preferred routes to connect with potential load enquiries.</p></article>
+        <article class="card"><div class="symbol">↔</div><h3>FTL & Route Opportunities</h3><p>Explore full truckload and return-load opportunities where the route, vehicle and timing are a suitable match.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="how" id="how">
+    <div class="wrap">
+      <div class="section-head"><div class="eyebrow">Simple process</div><h2>How it works</h2><p>A straightforward start to your transport enquiry.</p></div>
+      <div class="steps">
+        <article class="step"><div class="step-num">STEP 01</div><h3>Share the details</h3><p>Tell us your pickup, destination, cargo, required vehicle and preferred date—or share your truck availability.</p></article>
+        <article class="step"><div class="step-num">STEP 02</div><h3>Review the options</h3><p>We review the enquiry and, where possible, help connect you with a suitable transport partner.</p></article>
+        <article class="step"><div class="step-num">STEP 03</div><h3>Confirm directly</h3><p>Before any booking, confirm the rate, availability, documents, responsibilities and payment terms in writing with the relevant parties.</p></article>
+      </div>
+    </div>
+  </section>
+  <section class="forms-section" id="enquiry">
+    <div class="wrap">
+      <div class="form-intro"><div class="eyebrow">Let's get moving</div><h2>What can we help you with?</h2><p>Choose the form that fits you. When you submit, WhatsApp will open with your details ready to send to Sahoo Freightways.</p></div>
+      <div class="form-tabs" role="tablist" aria-label="Choose enquiry type">
+        <button class="tab active" id="customerTab" role="tab" aria-selected="true" aria-controls="customerPanel">I need to transport goods</button>
+        <button class="tab" id="ownerTab" role="tab" aria-selected="false" aria-controls="ownerPanel">I'm a truck owner</button>
+      </div>
+      <div class="form-shell" id="customerPanel" role="tabpanel" aria-labelledby="customerTab">
+        <h3>Customer transport enquiry</h3><p class="sub">Fields marked * are required. Please don't include passwords, banking PINs or other sensitive information.</p>
+        <form id="customerForm">
+          <div class="fields">
+            <div class="field"><label for="cName">Your name / company <span class="required">*</span></label><input id="cName" name="name" required maxlength="100" placeholder="Name or business name"></div>
+            <div class="field"><label for="cPhone">Contact number <span class="required">*</span></label><input id="cPhone" name="phone" required type="tel" maxlength="30" placeholder="Phone / WhatsApp number"></div>
+            <div class="field"><label for="cPickup">Pickup location <span class="required">*</span></label><input id="cPickup" name="pickup" required maxlength="150" placeholder="City, state"></div>
+            <div class="field"><label for="cDelivery">Delivery location <span class="required">*</span></label><input id="cDelivery" name="delivery" required maxlength="150" placeholder="City, state"></div>
+            <div class="field"><label for="cCargo">Cargo / goods type <span class="required">*</span></label><input id="cCargo" name="cargo" required maxlength="150" placeholder="e.g. packaged goods, building materials"></div>
+            <div class="field"><label for="cWeight">Approx. weight / load size</label><input id="cWeight" name="weight" maxlength="100" placeholder="e.g. 8 tonnes / 20 pallets"></div>
+            <div class="field"><label for="cVehicle">Vehicle preference</label><select id="cVehicle" name="vehicle"><option value="">Not sure / recommend one</option><option>Pickup / mini truck</option><option>14 ft truck</option><option>17 ft truck</option><option>19 ft truck</option><option>22 ft truck</option><option>32 ft truck</option><option>Container truck</option><option>Trailer</option><option>Other / discuss</option></select></div>
+            <div class="field"><label for="cDate">Preferred loading date</label><input id="cDate" name="date" type="date"></div>
+            <div class="field"><label for="cBudget">Budget / expected rate (optional)</label><input id="cBudget" name="budget" maxlength="80" placeholder="₹ amount or open to quote"></div>
+            <div class="field"><label for="cCompany">Company / GST details (optional)</label><input id="cCompany" name="company" maxlength="150" placeholder="Company name, if applicable"></div>
+            <div class="field full"><label for="cNotes">Additional requirements</label><textarea id="cNotes" name="notes" maxlength="800" placeholder="Loading/unloading needs, delivery timing, or other details"></textarea></div>
+          </div>
+          <div class="form-foot"><button class="btn btn-dark" type="submit">Send Enquiry on WhatsApp ↗</button><p class="privacy-note">Submitting opens WhatsApp; your message is not automatically sent.</p></div>
+          <div class="success-note" id="customerSuccess" role="status">WhatsApp should open with your enquiry. Please review it and tap Send.</div>
+        </form>
+      </div>
+      <div class="form-shell" id="ownerPanel" role="tabpanel" aria-labelledby="ownerTab" hidden>
+        <h3>Truck owner / transport partner enquiry</h3><p class="sub">Share your vehicle and route details so relevant load enquiries can be explored.</p>
+        <form id="ownerForm">
+          <div class="fields">
+            <div class="field"><label for="oName">Owner / company name <span class="required">*</span></label><input id="oName" name="name" required maxlength="100" placeholder="Your name or company"></div>
+            <div class="field"><label for="oPhone">Contact number <span class="required">*</span></label><input id="oPhone" name="phone" required type="tel" maxlength="30" placeholder="Phone / WhatsApp number"></div>
+            <div class="field"><label for="oVehicle">Vehicle type <span class="required">*</span></label><select id="oVehicle" name="vehicle" required><option value="">Choose vehicle type</option><option>Pickup / mini truck</option><option>14 ft truck</option><option>17 ft truck</option><option>19 ft truck</option><option>22 ft truck</option><option>32 ft truck</option><option>Container truck</option><option>Trailer</option><option>Multiple vehicle types</option><option>Other</option></select></div>
+            <div class="field"><label for="oCount">Number of vehicles</label><input id="oCount" name="count" maxlength="50" placeholder="e.g. 1 / 5 vehicles"></div>
+            <div class="field"><label for="oLocation">Current base / location <span class="required">*</span></label><input id="oLocation" name="location" required maxlength="150" placeholder="City, state"></div>
+            <div class="field"><label for="oCapacity">Load capacity</label><input id="oCapacity" name="capacity" maxlength="100" placeholder="e.g. 10 tonnes"></div>
+            <div class="field full"><label for="oRoutes">Preferred routes / service areas <span class="required">*</span></label><input id="oRoutes" name="routes" required maxlength="250" placeholder="e.g. Odisha to Maharashtra; eastern India"></div>
+            <div class="field"><label for="oAvailability">Vehicle availability</label><select id="oAvailability" name="availability"><option>Available now</option><option>Available from a future date</option><option>Regular availability</option><option>Currently unavailable</option></select></div>
+            <div class="field"><label for="oDocs">Business / vehicle documents (optional note)</label><input id="oDocs" name="docs" maxlength="150" placeholder="e.g. documents available on request"></div>
+            <div class="field full"><label for="oNotes">Additional details</label><textarea id="oNotes" name="notes" maxlength="800" placeholder="Vehicle specs, return-load preference, operating hours, etc."></textarea></div>
+          </div>
+          <div class="form-foot"><button class="btn btn-dark" type="submit">Share Vehicle Details on WhatsApp ↗</button><p class="privacy-note">Submitting opens WhatsApp; your message is not automatically sent.</p></div>
+          <div class="success-note" id="ownerSuccess" role="status">WhatsApp should open with your details. Please review them and tap Send.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="pan">
+    <div class="wrap pan-grid">
+      <div><div class="eyebrow">One network. Many routes.</div><h2>Transport enquiries from across India</h2><p>We welcome enquiries for routes across India. Each request is reviewed individually, and any match depends on vehicle availability, route, timing and mutually agreed terms.</p><div class="route-pills"><span>Road Freight</span><span>Full Truckload</span><span>Return Loads</span><span>Truck Owner Network</span></div></div>
+      <div class="coverage-box"><h3>To help us respond, share:</h3><ul><li>Exact pickup and delivery locations</li><li>Cargo type and approximate weight</li><li>Vehicle type and loading date</li><li>Expected rate or budget, if available</li></ul><a class="btn btn-gold" href="#enquiry">Start Your Enquiry →</a></div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="wrap"><div class="section-head"><div class="eyebrow">Good to know</div><h2>Frequently asked questions</h2></div>
+      <div class="faq-list">
+        <details><summary>Does Sahoo Freightways own its own trucks?</summary><p>Sahoo Freightways is presented here as a freight coordination and connection service. We connect enquiries with independent truck owners and transport partners; this website does not claim ownership of a truck fleet.</p></details>
+        <details><summary>Can I request transport anywhere in India?</summary><p>You can submit enquiries for routes across India. A suitable vehicle or partner is not guaranteed and depends on route, timing and availability.</p></details>
+        <details><summary>Is submitting the form a confirmed booking?</summary><p>No. The form starts an enquiry only. Booking, rates, payment terms, documents, cargo handling and responsibilities must be reviewed and agreed by the relevant parties before dispatch.</p></details>
+        <details><summary>How do I contact Sahoo Freightways?</summary><p>WhatsApp: +91 63717 31430. Email: sahoofreightways@gmail.com. Use the enquiry forms above to prepare a message with the details we need.</p></details>
+      </div>
+    </div>
+  </section>
+  <div class="contact-band" id="contact">
+    <div class="wrap contact-inner"><div><h2>Have a load or a vehicle available?</h2><p>Send the details and start a conversation with Sahoo Freightways.</p></div><div class="contact-actions"><a class="btn btn-dark" href="https://wa.me/916371731430?text=Hello%20Sahoo%20Freightways%2C%20I%20would%20like%20to%20discuss%20a%20freight%20enquiry." target="_blank" rel="noopener">WhatsApp Us ↗</a><a class="btn" style="border:1px solid #0b1d33;color:#0b1d33" href="mailto:sahoofreightways@gmail.com?subject=Freight%20Enquiry">Email Us</a></div></div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="#home"><div class="mark">SF</div><div><strong>SAHOO FREIGHTWAYS</strong><small>CONNECTING LOADS. MOVING INDIA.</small></div></a><p>Connecting customers and businesses with suitable truck owners and transport partners for freight enquiries across India.</p></div>
+      <div class="footer-col"><h4>Explore</h4><a href="#services">Services</a><a href="#how">How It Works</a><a href="#enquiry">Customer Enquiry</a><a href="#enquiry" id="footerOwner">Truck Owner Enquiry</a></div>
+      <div class="footer-col"><h4>Get in touch</h4><a href="https://wa.me/916371731430" target="_blank" rel="noopener">WhatsApp: +91 63717 31430</a><a href="mailto:sahoofreightways@gmail.com">sahoofreightways@gmail.com</a><span>Service enquiries: Pan-India</span></div>
+    </div>
+    <p class="disclaimer">Sahoo Freightways is a transport coordination and connection service. Submitting an enquiry does not confirm a booking or guarantee a vehicle, rate, delivery time or route coverage. All service details, documents, rates, payment terms and responsibilities must be confirmed in writing by the relevant parties. Do not send confidential financial or identity information through this website.</p>
+    <div class="copyright"><span>© <span id="year"></span> Sahoo Freightways. All rights reserved.</span><span>Connecting Loads. Moving India.</span></div>
+  </div>
+</footer>
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded', String(open));
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false');
+  }));
+  const customerTab = document.getElementById('customerTab');
+  const ownerTab = document.getElementById('ownerTab');
+  const customerPanel = document.getElementById('customerPanel');
+  const ownerPanel = document.getElementById('ownerPanel');
+  function showPanel(owner) {
+    customerPanel.hidden = owner; ownerPanel.hidden = !owner;
+    customerTab.classList.toggle('active', !owner); ownerTab.classList.toggle('active', owner);
+    customerTab.setAttribute('aria-selected', String(!owner)); ownerTab.setAttribute('aria-selected', String(owner));
+  }
+  customerTab.addEventListener('click', () => showPanel(false));
+  ownerTab.addEventListener('click', () => showPanel(true));
+  document.getElementById('footerOwner').addEventListener('click', () => showPanel(true));
+  document.getElementById('year').textContent = new Date().getFullYear();
+  function val(form, name) {
+    const el = form.elements[name];
+    return el && el.value.trim() ? el.value.trim() : 'Not provided';
+  }
+  function openWhatsApp(lines, noteId) {
+    const message = lines.join('\n');
+    const url = 'https://wa.me/916371731430?text=' + encodeURIComponent(message);
+    const win = window.open(url, '_blank', 'noopener,noreferrer');
+    document.getElementById(noteId).style.display = 'block';
+    if (!win) window.location.href = url;
+  }
+  document.getElementById('customerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!this.reportValidity()) return;
+    openWhatsApp([
+      'Hello Sahoo Freightways, I have a customer transport enquiry.',
+      '', 'Name / Company: ' + val(this,'name'),
+      'Contact: ' + val(this,'phone'),
+      'Pickup: ' + val(this,'pickup'),
+      'Delivery: ' + val(this,'delivery'),
+      'Cargo: ' + val(this,'cargo'),
+      'Approx. weight / load: ' + val(this,'weight'),
+      'Vehicle preference: ' + val(this,'vehicle'),
+      'Preferred loading date: ' + val(this,'date'),
+      'Budget / expected rate: ' + val(this,'budget'),
+      'Company / GST details: ' + val(this,'company'),
+      'Additional requirements: ' + val(this,'notes'),
+      '', 'Please review my enquiry and let me know if a suitable transport option may be available.'
+    ], 'customerSuccess');
+  });
+  document.getElementById('ownerForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!this.reportValidity()) return;
+    openWhatsApp([
+      'Hello Sahoo Freightways, I am a truck owner / transport partner.',
+      '', 'Owner / Company: ' + val(this,'name'),
+      'Contact: ' + val(this,'phone'),
+      'Vehicle type: ' + val(this,'vehicle'),
+      'Number of vehicles: ' + val(this,'count'),
+      'Current base: ' + val(this,'location'),
+      'Load capacity: ' + val(this,'capacity'),
+      'Preferred routes: ' + val(this,'routes'),
+      'Availability: ' + val(this,'availability'),
+      'Documents note: ' + val(this,'docs'),
+      'Additional details: ' + val(this,'notes'),
+      '', 'Please contact me if suitable load enquiries are available.'
+    ], 'ownerSuccess');
+  });
+</script>
+</body>
+</html>
